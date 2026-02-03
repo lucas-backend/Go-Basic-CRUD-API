@@ -1,0 +1,6 @@
+# Ignore file environment
+.env
+
+# Ignore file build binary (opsional)
+main.exe
+main
