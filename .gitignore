@@ -1,5 +1,5 @@
 # Ignore file environment
-.env
+# .env
 
 # Ignore file build binary (opsional)
 main.exe
