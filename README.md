@@ -4,27 +4,27 @@ Proyek ini adalah implementasi sederhana dari RESTful API untuk manajemen data p
 
 ## Teknologi yang Digunakan
 
-Proyek ini dibangun menggunakan teknologi dan pustaka berikut:
+Proyek ini dibangun menggunakan teknologi dan library berikut:
 
 *   **[Go](https://go.dev/)** (Versi 1.25.6) - Bahasa pemrograman utama.
 *   **[Gorilla Mux](https://github.com/gorilla/mux)** - Router HTTP yang kuat dan fleksibel untuk Go.
 *   **[Go-MySQL-Driver](https://github.com/go-sql-driver/mysql)** - Driver database MySQL untuk Go `database/sql`.
-*   **[Godotenv](https://github.com/joho/godotenv)** - Pustaka untuk memuat variabel lingkungan dari file `.env`.
+*   **[Godotenv](https://github.com/joho/godotenv)** - Library untuk memuat variabel lingkungan dari file `.env`.
 
 ## Prasyarat
 
-Sebelum menjalankan proyek ini, pastikan Anda telah menginstal:
+Sebelum menjalankan proyek ini, pastikan kalian telah menginstal:
 
-1.  **Go** (Golang) terinstal di sistem Anda.
+1.  **Go** (Golang) terinstal di sistem kalian.
 2.  **MySQL** atau **MariaDB** sebagai server database.
 3.  **Git** (opsional, untuk kloning repositori).
 
 ## Panduan Instalasi dan Konfigurasi
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer lokal Anda:
+Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer lokal kalian:
 
 ### 1. Buka Proyek
-Pastikan Anda berada di direktori root proyek ini.
+Pastikan kalian berada di direktori root proyek ini.
 
 ```bash
 cd path/to/my-api
@@ -38,12 +38,12 @@ go mod tidy
 ```
 
 ### 3. Konfigurasi Database
-Buat database baru di MySQL dan buat tabel `users` (atau sesuaikan dengan kebutuhan Anda). Berikut adalah contoh query SQL sederhana untuk membuat tabel yang sesuai dengan model `User` di proyek ini:
+Buat database baru di MySQL dan buat tabel `users` (atau sesuaikan dengan kebutuhan kalian). Berikut adalah contoh query SQL sederhana untuk membuat tabel yang sesuai dengan model `User` di proyek ini:
 
 ```sql
-CREATE DATABASE nama_database_anda;
+CREATE DATABASE nama_database_kalian;
 
-USE nama_database_anda;
+USE nama_database_kalian;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -54,7 +54,7 @@ CREATE TABLE users (
 ```
 
 ### 4. Konfigurasi Environment Variables (.env)
-Buka file `.env` (atau buat baru jika belum ada) dan sesuaikan konfigurasinya dengan kredensial database Anda.
+Buka file `.env` (atau buat baru jika belum ada) dan sesuaikan konfigurasinya dengan kredensial database kalian.
 
 Contoh isi file `.env`:
 
@@ -62,10 +62,10 @@ Contoh isi file `.env`:
 SERVER_PORT=8080
 
 DB_USER=root
-DB_PASSWORD=password_database_anda
+DB_PASSWORD=password_database_kalian
 DB_HOST=localhost
 DB_PORT=3306
-DB_NAME=nama_database_anda
+DB_NAME=nama_database_kalian
 ```
 
 ### 5. Jalankan Server
@@ -75,7 +75,7 @@ Jalankan aplikasi menggunakan perintah berikut:
 go run main.go
 ```
 
-Jika berhasil, Anda akan melihat pesan seperti:
+Jika berhasil, kalian akan melihat pesan seperti:
 `Using API Server berjalan di port 8080` dan `Database berhasil terhubung!`
 
 ## Dokumentasi API Endpoint
